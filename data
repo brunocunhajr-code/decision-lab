@@ -1,6 +1,0 @@
-id,asset_type,risk_level,expected_return,actual_return,outcome,duration_days
-1,poker,0.9,0.4,-0.6,loss,1
-2,real_estate,0.3,0.1,0.12,win,180
-3,stocks,0.6,0.2,0.05,win,90
-4,crypto,0.95,0.5,-0.8,loss,30
-5,poker,0.8,0.25,0.4,win,1
