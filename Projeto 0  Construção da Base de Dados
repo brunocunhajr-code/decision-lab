@@ -4,7 +4,7 @@ decision-lab/
 ├── requirements.txt
 ├── .gitignore
 │
-├── 00_foundation/
+├── 00_project
 │
 ├── 01_sql/
 │
