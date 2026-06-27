@@ -20,3 +20,17 @@ SELECT
 FROM decisions
 GROUP BY asset_type
 ORDER BY taxa_vitoria_pct DESC;
+
+-- Query 3: risco vs retorno real
+SELECT 
+    CASE 
+        WHEN risk_level >= 0.8 THEN 'Alto Risco'
+        WHEN risk_level >= 0.5 THEN 'Medio Risco'
+        ELSE 'Baixo Risco'
+    END AS categoria_risco,
+    COUNT(*) AS total,
+    ROUND(AVG(actual_return), 3) AS retorno_medio,
+    ROUND(AVG(risk_level), 2) AS risco_medio
+FROM decisions
+GROUP BY categoria_risco
+ORDER BY risco_medio DESC;
